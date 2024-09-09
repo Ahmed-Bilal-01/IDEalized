@@ -41,15 +41,15 @@
       <!-- general IDE -->
       <feature id="org.eclipse.tips.feature" installMode="root"/>
       <feature id="me.glindholm.plugin.quickimage2.feature" installMode="root"/>
-      <!-- non-p2: <feature id="AnyEditTools" installMode="root"/> -->
-      <!-- non-p2: <feature id="zipeditor" installMode="root"/> -->
+      <feature id="AnyEditTools" installMode="root"/> 
+      <feature id="zipeditor" installMode="root"/> 
       <!-- <feature id="dakara.eclipse.commander.feature" installMode="root"/> -->
       <feature id="de.jcup.batcheditor" installMode="root"/>
       <feature id="de.jcup.basheditor" installMode="root"/>
       <feature id="net.sourceforge.javahexeditor" installMode="root"/>
       <feature id="org.eclipse.mylyn.wikitext.feature" installMode="root"/>
       <feature id="org.eclipse.tm.terminal.feature" installMode="root"/>
-      <!-- non-p2: <feature id="org.dadacoalition.yedit.feature" installMode="root"/> -->
+      <feature id="org.dadacoalition.yedit.feature" installMode="root"/> 
       <feature id="de.jcup.jenkinseditor.feature" installMode="root"/>
       <feature id="org.eclipse.tm4e.feature" installMode="root"/>
 

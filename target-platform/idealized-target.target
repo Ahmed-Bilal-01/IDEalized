@@ -51,6 +51,9 @@
             <unit id="org.eclipse.mylyn.java_feature.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.mylyn.pde_feature.feature.group" version="0.0.0"/>
             <unit id="org.eclipse.mylyn.git.feature.group" version="0.0.0"/>
+            
+            <!-- <unit id="org.eclipse.mylyn.git.feature.feature.group" version="0.0.0"/> -->
+
             <repository location="https://download.eclipse.org/mylyn/releases/latest"/>
         </location>
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
@@ -65,14 +68,14 @@
             <unit id="me.glindholm.plugin.quickimage2.feature.feature.group" version="0.0.0"/>
             <repository location="https://gnl42.github.io/QuickImage2-update"/>
         </location>
-        <!-- non-p2: <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+        <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
             <unit id="AnyEditTools.feature.group" version="0.0.0"/>
-            <repository location="https://raw.githubusercontent.com/iloveeclipse/plugins/latest"/>
-        </location> -->
-        <!-- non-p2: <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+            <repository location="file:/C:/myEclipse/IDEalized/mirror-non-p2/target/repository/"/>
+        </location> 
+        <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
             <unit id="zipeditor.feature.group" version="0.0.0"/>
-            <repository location="https://zipeditor.sourceforge.net/update"/>
-        </location> -->
+            <repository location="file:/C:/myEclipse/IDEalized/mirror-non-p2/target/repository/"/>
+        </location> 
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
             <unit id="de.jcup.batcheditor.feature.group" version="0.0.0"/>
             <repository location="https://de-jcup.github.io/update-site-eclipse-batch-editor/update-site"/>
@@ -85,10 +88,10 @@
             <unit id="net.sourceforge.javahexeditor.feature.group" version="0.0.0"/>
             <repository location="http://javahexeditor.sourceforge.net/update"/>
         </location>
-        <!-- non-p2: <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+        <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
             <unit id="org.dadacoalition.yedit.feature.feature.group" version="0.0.0"/>
-            <repository location="http://dadacoalition.org/yedit"/>
-        </location> -->
+            <repository location="file:/C:/myEclipse/IDEalized/mirror-non-p2/target/repository/"/>
+        </location> 
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
             <unit id="de.jcup.jenkinseditor.feature.feature.group" version="0.0.0"/>
             <repository location="https://de-jcup.github.io/update-site-eclipse-jenkins-editor/update-site/"/>
@@ -100,6 +103,69 @@
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
             <unit id="com.github.spotbugs.plugin.eclipse.feature.group" version="0.0.0"/>
             <repository location="https://spotbugs.github.io/eclipse"/>
+        </location>
+         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+             <unit id="org.eclipse.cdt.autotools.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.cmake.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.build.crossgcc.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.debug.gdbjtag.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.launch.serial.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.linuxtools.cdt.libhover.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.debug.ui.memory.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.meson.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.launch.remote.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.debug.standalone.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.cdt.testsrunner.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.linuxtools.changelog.c.feature.group" version="0.0.0"/>
+             <unit id="epp.package.embedcpp" version="0.0.0"/>
+             <unit id="org.eclipse.platform.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.rcp.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.templates.ad.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.managedbuild.cross.arm.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.packs.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.codered.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.doc.user.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.templates.freescale.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.templates.cortexm.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.debug.gdbjtag.jlink.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.debug.gdbjtag.openocd.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.debug.gdbjtag.pyocd.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.debug.gdbjtag.qemu.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.managedbuild.cross.riscv.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.templates.sifive.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.templates.stm.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.embedcdt.templates.xpack.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.linuxtools.gcov.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.tracecompass.gdbtrace.feature.group" version="0.0.0"/>
+             <!-- <unit id="org.eclipse.egit.feature.group" version="0.0.0"/> -->
+             <unit id="org.eclipse.linuxtools.gprof.feature.feature.group" version="0.0.0"/>
+             <!-- <unit id="org.eclipse.jgit.feature.group" version="0.0.0"/> -->
+             <unit id="org.eclipse.launchbar.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.linuxtools.cdt.libhover.devhelp.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.tracecompass.lttng2.kernel.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.tracecompass.lttng2.control.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.tracecompass.lttng2.ust.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.epp.mpc.feature.group" version="0.0.0"/>
+             <!-- <unit id="org.eclipse.mylyn.jenkins.feature.feature.group" version="0.0.0"/> -->
+             <!-- <unit id="org.eclipse.mylyn.commons.activity.feature.feature.group" version="0.0.0"/> -->
+             <!-- <unit id="org.eclipse.mylyn.cdt.feature.feature.group" version="0.0.0"/> -->
+             <!-- <unit id="org.eclipse.mylyn.ide.feature.feature.group" version="0.0.0"/> -->
+             <!-- <unit id="org.eclipse.mylyn.egit.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.mylyn.reviews.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.mylyn.github.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.mylyn.wikitext.feature.feature.group" version="0.0.0"/> -->
+             <unit id="org.eclipse.oomph.setup.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.launchbar.remote.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.linuxtools.rpm.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.tm.terminal.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.tm.terminal.connector.cdtserial.feature.feature.group" version="0.0.0"/>
+             <unit id="org.eclipse.linuxtools.valgrind.feature.group" version="0.0.0"/>
+
+
+
+             <repository location="https://download.eclipse.org/releases/latest"/>
         </location>
     </locations>
 </target>

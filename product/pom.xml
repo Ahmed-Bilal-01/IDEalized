@@ -13,7 +13,7 @@
         <add-jre>yes</add-jre>
         <add-jre.jdk>yes</add-jre.jdk>
         <add-jre.version>21</add-jre.version>
-        <nsis>yes</nsis>
+        <nsis>no</nsis>
         <nsis.version>3.09</nsis.version>
     </properties>
     <build>
