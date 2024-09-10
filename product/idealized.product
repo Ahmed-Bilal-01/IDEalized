@@ -35,6 +35,7 @@
       <feature id="org.eclipse.equinox.p2.user.ui"/>
       <feature id="org.idealized.feature" installMode="root"/>
 
+
       <!-- Eclipse Marketplace Client -->
       <feature id="org.eclipse.epp.mpc" installMode="root"/>
 
@@ -59,21 +60,15 @@
       <feature id="org.polarion.eclipse.team.svn.connector.svnkit1_10" installMode="root"/>
 
       <!-- Mylyn + connectors -->
-      <feature id="org.eclipse.mylyn_feature" installMode="root"/>
+      <!-- <feature id="org.eclipse.mylyn_feature" installMode="root"/>
       <feature id="net.resheim.eclipse.timekeeper" installMode="root"/>
       <feature id="org.eclipse.mylyn.hudson" installMode="root"/>
       <feature id="org.eclipse.mylyn.bugzilla_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.ide_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.java_feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.pde_feature" installMode="root"/>
-      <feature id="org.eclipse.mylyn.git" installMode="root"/>
+      <feature id="org.eclipse.mylyn.git" installMode="root"/> -->
 
-      <!-- Java -->
-      <feature id="org.eclipse.jdt" installMode="root"/>
-      <feature id="org.eclipse.eclemma.feature" installMode="root"/>
-      <feature id="org.eclipse.m2e.feature" installMode="root"/>
-      <feature id="org.eclipse.buildship" installMode="root"/>
-      <feature id="com.github.spotbugs.plugin.eclipse" installMode="root"/>
 
       <!-- Java 19 (BETA)
       <feature id="org.eclipse.jdt.java19patch" installMode="root"/>
@@ -90,7 +85,7 @@
       <feature id="org.eclipse.rcp.source" installMode="root"/>
       <feature id="org.eclipse.jdt.source" installMode="root"/>
       <feature id="org.eclipse.pde.source" installMode="root"/>
-
+      <!-- <feature id="org.eclipse.equinox.p2.iu" installMode="root"/> -->
       <!-- misc: "Repository Explorer" view -->
       <feature id="org.eclipse.oomph.targlets" installMode="root"/>
 
@@ -102,6 +97,51 @@
       <feature id="org.eclipse.wildwebdeveloper.feature" installMode="root"/>
       <feature id="org.eclipse.wildwebdeveloper.embedder.node.feature" installMode="root"/>
 
+
+      <feature id="org.eclipse.epp.package.embedcpp.feature" installMode="root"/>
+      <feature id="org.eclipse.cdt" installMode="root"/>
+      <feature id="org.eclipse.cdt.autotools" installMode="root"/>
+      <feature id="org.eclipse.cdt.build.crossgcc" installMode="root"/>
+      <feature id="org.eclipse.cdt.cmake" installMode="root"/>
+      <feature id="org.eclipse.cdt.meson" installMode="root"/>
+      <feature id="org.eclipse.cdt.docker.launcher" installMode="root"/>
+      <feature id="org.eclipse.cdt.debug.gdbjtag" installMode="root"/>
+      <feature id="org.eclipse.cdt.debug.standalone" installMode="root"/>
+      <feature id="org.eclipse.cdt.debug.ui.memory" installMode="root"/>
+      <feature id="org.eclipse.cdt.launch.remote" installMode="root"/>
+      <feature id="org.eclipse.cdt.launch.serial.feature" installMode="root"/>
+      <feature id="org.eclipse.cdt.testsrunner.feature" installMode="root"/>
+      <feature id="org.eclipse.launchbar" installMode="root"/>
+      <feature id="org.eclipse.launchbar.remote" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.cdt.libhover.feature" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.cdt.libhover.devhelp.feature" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.changelog.c" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.gcov" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.gprof.feature" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.rpm" installMode="root"/>
+      <feature id="org.eclipse.linuxtools.valgrind" installMode="root"/>
+      <feature id="org.eclipse.tm.terminal.connector.cdtserial.feature" installMode="root"/>
+      <feature id="org.eclipse.tracecompass.gdbtrace" installMode="root"/>
+      <feature id="org.eclipse.tracecompass.lttng2.control" installMode="root"/>
+      <feature id="org.eclipse.tracecompass.lttng2.kernel" installMode="root"/>
+      <feature id="org.eclipse.tracecompass.lttng2.ust" installMode="root"/>
+      <feature id="org.eclipse.embedcdt" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.managedbuild.cross.arm" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.managedbuild.cross.riscv" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.codered" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.debug.gdbjtag.jlink" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.debug.gdbjtag.openocd" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.debug.gdbjtag.pyocd" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.debug.gdbjtag.qemu" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.packs" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.doc.user" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.ad" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.cortexm" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.freescale" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.stm" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.sifive" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.xpack" installMode="root"/>
+      <feature id="org.eclipse.mylyn.cdt.feature" installMode="root"/>
    </features>
 
    <configurations>
@@ -111,6 +151,7 @@
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="slf4j.simple" autoStart="true"/>
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildQualifier}" />
       <property name="org.eclipse.update.reconcile" value="false" />
       <property name="osgi.bundles.defaultStartLevel" value="4" />
